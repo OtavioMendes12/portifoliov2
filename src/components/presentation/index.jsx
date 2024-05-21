@@ -36,7 +36,7 @@ export const Presentation = () => {
           </div>
           <div className="content-left">
             <p className='p-title'>{i18n.t('presentation.download')}</p>
-            <a className='btn-down' href={Profile} download="Front-end Otavio" target='_blank' rel='noreferrer'>
+            <a className='btn-down' href={Profile} download="Backend Otavio" target='_blank' rel='noreferrer'>
             {i18n.t('presentation.download_button')}
             </a>
           </div>
