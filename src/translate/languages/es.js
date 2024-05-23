@@ -22,7 +22,7 @@ const messages = {
 
             presentation:{
                 about:'SOBRE',
-                about_text1:'Developer front-end, amante',
+                about_text1:'Developer BackEnd, amante',
                 about_text2:'mediante arranque de Java Spring. Desde el inicio de mi carrera enfocado en el desarrollo de APIs y aplicaciones web.',
                 about_em:'',
                 address:'VIVE EN',
