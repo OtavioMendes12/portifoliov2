@@ -22,8 +22,10 @@ import TodoList1 from "../../assets/photos/projects/todolist/Codigo Todo List.jp
 
 
 import Treinaai from "../../assets/photos/projects/treinaai/Treina ai .jpg";
-import ArquiteturaHexa from "../../assets/photos/projects/arquiteturahexa/codigotelaArquitetura.jpg";
-import ArquiteturaHexa1 from "../../assets/photos/projects/arquiteturahexa/estruturaCamadas.jpg";
+import ArquiteturaHexa from "../../assets/photos/projects/arquiteturahexa/codigoBankTransfer.png";
+
+import TransferEstatistica from "../../assets/photos/projects/transferEstatistica/TransferEstatistica.png";
+
 
 import Portfolio from "../../assets/photos/projects/portfolio/portifolio.jpg";
 import Portfolio1 from "../../assets/photos/projects/portfolio/codigo Portifolio.jpg";
@@ -283,6 +285,51 @@ export const Projects = () => {
                     </div>
 
                     <div className="project">
+                        <img src={TransferEstatistica} alt="Treina Aí" />
+                        <div className="drop">
+                            <div className="text">
+                                <button onClick={openModalTre} className="btn-down"><p>{i18n.t('projects.seemore')}</p></button>
+                                <Modal
+                                    isOpen={modalTreIsOpen}
+                                    onRequestClose={closeModalTre}
+                                    contentLabel="Modal Example"
+                                    overLayClassName="modal-overlay"
+                                    className="modal-content"
+                                >
+                                    <Swiper
+                                        pagination={{
+                                            clickable: true,
+                                        }}
+                                        navigation={true}
+                                        loop={true}
+                                        slidesPerView={1}
+                                        autoplay={{ delay: 5000 }}
+                                        modules={[Pagination, Navigation]}
+                                    >
+                                        <SwiperSlide><img src={TransferEstatistica} alt="mockup site logo" /></SwiperSlide>
+                                    </Swiper>
+                                    <h4>Desafio Backend Itaú</h4>
+                                    <hr />
+                                    <div className="skill-camp">
+                                        <div className="skill-box">
+                                            <span>Java</span>
+                                        </div>
+                                        <div className="skill-box">
+                                            <span>SpringBoot</span>
+                                        </div>
+                                    </div>
+                                    <div className="content-link">
+                                        <a href="https://github.com/OtavioMendes12/Transacoes-e-Estatisticas-Java" target='_blank' rel='noreferrer' >https://github.com/OtavioMendes12/Transacoes-e-Estatisticas-Java</a>
+                                        <img className="share" src={Share} alt="" />
+                                    </div>
+                                    <button onClick={closeModalTre}><p>{i18n.t('projects.modal_button')}</p></button>
+                                    <span className="version">{i18n.t('projects.modal_warning')}</span>
+                                </Modal>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="project">
                         <img src={ArquiteturaHexa} alt="Turnflix" />
                         <div className="drop">
                             <div className="text">
@@ -306,23 +353,21 @@ export const Projects = () => {
                                         modules={[Pagination, Navigation]}
                                     >
                                         <SwiperSlide><img src={ArquiteturaHexa} alt="mockup site logo" /></SwiperSlide>
-                                        <SwiperSlide><img src={ArquiteturaHexa1} alt="mockup site logo" /></SwiperSlide>
+                                       
                                     </Swiper>
-                                    <h4>Arquitetura Hexagonal</h4>
+                                    <h4>Sistema de Transferencia Bancária</h4>
                                     <hr />
                                     <div className="skill-camp">
                                         <div className="skill-box">
-                                            <span>Python</span>
+                                            <span>GOLANG</span>
                                         </div>
-                                        <div className="skill-box">
-                                            <span>Flask</span>
-                                        </div>
+                                    
                                         <div className="skill-box">
                                             <span>Arquitetura Hexagona</span>
                                         </div>
                                     </div>
                                     <div className="content-link">
-                                        <a href="https://github.com/OtavioMendes12/Arquitetura-Hexagonal" target='_blank' rel='noreferrer' >https://github.com/OtavioMendes12/Arquitetura-Hexagonal</a>
+                                        <a href="https://github.com/OtavioMendes12/Sistema-de-Transferencia-Bancaria" target='_blank' rel='noreferrer' >https://github.com/OtavioMendes12/Sistema-de-Transferencia-Bancaria</a>
                                         <img className="share" src={Share} alt="" />
                                     </div>
                                     <button onClick={closeModalFor}><p>{i18n.t('projects.modal_button')}</p></button>
