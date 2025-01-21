@@ -30,7 +30,7 @@ const messages = {
                 address_text2:'Minas Gerais',
                 address_text3:'Brazil',
                 experience:'EXPERIENCE',
-                experience_text:'1 - 2 years | Junior',
+                experience_text:'2 years | Junior',
                 download:'DOWNLOAD',
                 download_button:'Curriculum.pdf'
             },
