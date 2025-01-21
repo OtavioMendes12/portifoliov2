@@ -1,6 +1,6 @@
 import { i18n } from "../../translate/i18n";
 import './styles.css';
-import Perfil from "../../assets/photos/eumesmo.jpeg";
+import Perfil from "../../assets/photos/tata.png";
 import Profile from "../../assets/profile/curriculo.pdf";
 
 

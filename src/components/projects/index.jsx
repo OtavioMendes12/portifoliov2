@@ -30,6 +30,11 @@ import TransferEstatistica from "../../assets/photos/projects/transferEstatistic
 import Portfolio from "../../assets/photos/projects/portfolio/portifolio.jpg";
 import Portfolio1 from "../../assets/photos/projects/portfolio/codigo Portifolio.jpg";
 
+import SapatoFacil from "../../assets/photos/projects/sapatoFacil/sapatoFacil.png"
+
+
+import TransacaoEstatistica from "../../assets/photos/projects/TransacaoEstatistica/SistemaTransferenciaGO.png"
+
 
 
 Modal.setAppElement("#root");
@@ -144,7 +149,118 @@ export const Projects = () => {
                             </div>
                         </div>
                     </div>
+                    <div className="project">
+                        <img src={SapatoFacil} alt="SapatoFacil" />
+                        <div className="drop">
+                            <div className="text">
+                                <button onClick={openModalTwo} className="btn-down"><p>{i18n.t('projects.seemore')}</p></button>
+                                <Modal
+                                    isOpen={modalTwoIsOpen}
+                                    onRequestClose={closeModalTwo}
+                                    contentLabel="Modal Example"
+                                    overLayClassName="modal-overlay"
+                                    className="modal-content"
+                                >
+                                    <Swiper
+                                        pagination={{
+                                            clickable: true,
+                                        }}
+                                        navigation={true}
+                                        loop={true}
+                                        slidesPerView={1}
+                                        autoplay={{ delay: 5000 }}
+                                        modules={[Pagination, Navigation]}
+                                    >
+                                        <SwiperSlide><img src={SapatoFacil} alt="mockup site logo" /></SwiperSlide>
+                                    </Swiper>
+                                    <h4>SapatoFacil - Loja de Sapatos</h4>
+                                    <hr />
+                                    <div className="skill-camp">
+                                        <div className="skill-box">
+                                            <span>TypeScript</span>
+                                        </div>
+                                        <div className="skill-box">
+                                            <span>Java</span>
+                                        </div>
+                                        <div className="skill-box">
+                                            <span>Spring Boot</span>
+                                        </div>
+                                        <div className="skill-box">
+                                            <span>React</span>
+                                        </div>
+                                        <div className="skill-box">
+                                            <span>Banco de Dados</span>
+                                        </div>
+                                        <div className="skill-box">
+                                            <span>Github</span>
+                                        </div>
+                                        <div className="skill-box">
+                                            <span>JWT Authorization</span>
+                                        </div>
+                                        
+                                    </div>
+                                    <div className="content-link">
+                                        <a href="https://sapato-facil-0c8377071d00.herokuapp.com" target='_blank' rel='noreferrer' >https://sapato-facil-0c8377071d00.herokuapp.com</a>
+                                        <img className="share" src={Share} alt="" />
+                                    </div>
+                                    <button onClick={closeModalTwo}><p>{i18n.t('projects.modal_button')}</p></button>
+                                    <span className="version">{i18n.t('projects.modal_warning')}</span>
+                                </Modal>
+                            </div>
+                        </div>
+                    </div>
 
+                    <div className="project">
+                        <img src={TransacaoEstatistica} alt="SistemaBancario" />
+                        <div className="drop">
+                            <div className="text">
+                                <button onClick={openModalTwo} className="btn-down"><p>{i18n.t('projects.seemore')}</p></button>
+                                <Modal
+                                    isOpen={modalTwoIsOpen}
+                                    onRequestClose={closeModalTwo}
+                                    contentLabel="Modal Example"
+                                    overLayClassName="modal-overlay"
+                                    className="modal-content"
+                                >
+                                    <Swiper
+                                        pagination={{
+                                            clickable: true,
+                                        }}
+                                        navigation={true}
+                                        loop={true}
+                                        slidesPerView={1}
+                                        autoplay={{ delay: 5000 }}
+                                        modules={[Pagination, Navigation]}
+                                    >
+                                        <SwiperSlide><img src={TransacaoEstatistica} alt="mockup site logo" /></SwiperSlide>
+                                    
+                                    </Swiper>
+                                    <h4>Sistema de Transferencia Bancaria - Otávio Mendes</h4>
+                                    <hr />
+                                    <div className="skill-camp">
+                                        <div className="skill-box">
+                                            <span>GO Lang</span>
+                                        </div>
+                                        <div className="skill-box">
+                                            <span>MySQL</span>
+                                        </div>
+                                        <div className="skill-box">
+                                            <span>MongoDB</span>
+                                        </div>
+                                        <div className="skill-box">
+                                            <span>MicroService</span>
+                                        </div>
+                                    </div>
+                                    <div className="content-link">
+                                        <a href="https://github.com/OtavioMendes12/Sistema-de-Transferencia-Bancaria" target='_blank' rel='noreferrer' >https://github.com/OtavioMendes12/Sistema-de-Transferencia-Bancaria</a>
+                                        <img className="share" src={Share} alt="" />
+                                    </div>
+                                    <button onClick={closeModalTwo}><p>{i18n.t('projects.modal_button')}</p></button>
+                                    <span className="version">{i18n.t('projects.modal_warning')}</span>
+                                </Modal>
+                            </div>
+                        </div>
+                    </div>
                     <div className="project">
                         <img src={Portfolio} alt="Portfolio" />
                         <div className="drop">
